@@ -1,150 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>kʷátɬp</title>
-  <meta name="description" content="kʷátɬp — studio and tmíxʷ, a solo AI narrative engine." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>tmíxʷ — kʷátɬp</title>
+<meta name="description" content="tmíxʷ — a solo AI narrative engine that runs entirely on your hardware. By kʷátɬp." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="styles/site.css" />
 </head>
 <body>
-  <!--
-    LANGUAGE SOURCING
-    All names from nɬeʔkepmxcín (Nlaka'pamux), used with respect and attribution.
+<!--
+  LANGUAGE SOURCING
+  All names from nɬeʔkepmxcín (Nlaka'pamux), used with respect and attribution.
 
-    kʷátɬp — cedar (noun)
-    Source: FirstVoices, nɬeʔkepmxcín language archive
-    Speaker: May Moses
-    URL: firstvoices.com/nlekepmxcin
+  kʷátɬp — cedar (noun)
+  Source: FirstVoices, nɬeʔkepmxcín language archive
+  Speaker: May Moses
+  URL: firstvoices.com/nlekepmxcin
 
-    tmíxʷ — ground, earth, land (noun)
-    Source: FirstVoices, nɬeʔkepmxcín language archive
-    Speaker: Art Sam
-    URL: firstvoices.com/nlekepmxcin
+  tmíxʷ — ground, earth, land (noun)
+  Source: FirstVoices, nɬeʔkepmxcín language archive
+  Speaker: Art Sam
+  URL: firstvoices.com/nlekepmxcin
 
-    siséye — two people (adjective)
-    Source: FirstVoices, nɬeʔkepmxcín language archive
-    Speaker: Esther Snow
-    URL: firstvoices.com/nlekepmxcin
-    Note: Reserved for siséye product (multiplayer companion), not yet on site.
+  siséye — two people (adjective)
+  Source: FirstVoices, nɬeʔkepmxcín language archive
+  Speaker: Esther Snow
+  URL: firstvoices.com/nlekepmxcin
+  Note: Reserved for siséye product (multiplayer companion), not yet on site.
 
-    Cewacuts (Choowaachoots) — utilizing Nlaka'pamux vision-seeking methods;
-    life purpose revealed through spirit helpers, vision quests, and ceremonial practices.
-    Source: "Nam ?es zúminstm," SCFS Framework, June 25 2018, page 24 of 52
-    Citing: Marie Anderson thesis, p. 117
-    Note: Not currently in FirstVoices dictionary. PDF is the authoritative source.
-    Note: Reserved for Cewacuts product (Unity plugin), not yet on site.
-  -->
+  Cewacuts (Choowaachoots) — utilizing Nlaka'pamux vision-seeking methods;
+  life purpose revealed through spirit helpers, vision quests, and ceremonial practices.
+  Source: "Nam ?es zúminstm," SCFS Framework, June 25 2018, page 24 of 52
+  Citing: Marie Anderson thesis, p. 117
+  Note: Not currently in FirstVoices dictionary. PDF is the authoritative source.
+  Note: Reserved for Cewacuts product (Unity plugin), not yet on site.
+-->
 
-  <div class="bg" aria-hidden="true"></div>
+<div class="site-bg" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <p class="wordmark">kʷátɬp</p>
-  </header>
+<div class="page-brackets" aria-hidden="true">
+  <svg viewBox="0 0 28 28"><path d="M2 12 L2 2 L12 2" fill="none" stroke="rgba(212,175,55,0.55)" stroke-width="1.2"/><path d="M2 18 L2 24" fill="none" stroke="rgba(212,175,55,0.18)" stroke-width="1"/></svg>
+  <svg viewBox="0 0 28 28"><path d="M2 12 L2 2 L12 2" fill="none" stroke="rgba(212,175,55,0.55)" stroke-width="1.2"/><path d="M2 18 L2 24" fill="none" stroke="rgba(212,175,55,0.18)" stroke-width="1"/></svg>
+  <svg viewBox="0 0 28 28"><path d="M2 12 L2 2 L12 2" fill="none" stroke="rgba(212,175,55,0.55)" stroke-width="1.2"/><path d="M2 18 L2 24" fill="none" stroke="rgba(212,175,55,0.18)" stroke-width="1"/></svg>
+  <svg viewBox="0 0 28 28"><path d="M2 12 L2 2 L12 2" fill="none" stroke="rgba(212,175,55,0.55)" stroke-width="1.2"/><path d="M2 18 L2 24" fill="none" stroke="rgba(212,175,55,0.18)" stroke-width="1"/></svg>
+</div>
+
+<div class="layout" data-screen-label="01 Home">
+
+  <aside class="sidebar">
+    <div class="panel flush" style="display:flex; flex-direction:column;">
+
+      <div class="sb-header">
+        <div class="sb-wordmark">kʷátɬp <span class="meta">Studio</span></div>
+        <p class="sb-tagline">A studio for things that endure.</p>
+      </div>
+
+      <nav class="sb-group" aria-label="Products">
+        <div class="sb-group-label">
+          <span>Products</span>
+          <span class="count">1 · more soon</span>
+        </div>
+        <a class="sb-item active" href="#tmixw">
+          <span class="dot"></span>
+          <span>tmíxʷ</span>
+          <span class="tag">live</span>
+        </a>
+        <a class="sb-item upcoming" aria-disabled="true">
+          <span class="dot"></span>
+          <span>second project</span>
+          <span class="tag">soon</span>
+        </a>
+        <a class="sb-item upcoming" aria-disabled="true">
+          <span class="dot"></span>
+          <span>third project</span>
+          <span class="tag">soon</span>
+        </a>
+      </nav>
+
+      <nav class="sb-group scrollspy" aria-label="On this page">
+        <div class="sb-group-label"><span>tmíxʷ · sections</span></div>
+        <a class="sb-item" href="#mechanism"><span class="dot"></span><span>Mechanism</span><span class="progress"></span></a>
+        <a class="sb-item" href="#origin"><span class="dot"></span><span>Origin</span><span class="progress"></span></a>
+        <a class="sb-item" href="#studio"><span class="dot"></span><span>The studio</span><span class="progress"></span></a>
+        <a class="sb-item" href="#get-it"><span class="dot"></span><span>Get it</span><span class="progress"></span></a>
+      </nav>
+
+      <nav class="sb-group" aria-label="External">
+        <div class="sb-group-label"><span>External</span></div>
+        <a class="sb-item" href="https://github.com/kwatlp/tmixw"><span class="dot"></span><span>GitHub</span></a>
+        <a class="sb-item" href="https://kwatlp.itch.io/"><span class="dot"></span><span>itch.io</span></a>
+      </nav>
+
+      <div class="sb-footer">
+        <div class="sb-status">
+          <span class="pulse"></span>
+          <span>Pre-release · 0.2.0 · Windows</span>
+        </div>
+        <div class="row">
+          <span>© 2026 kʷátɬp</span>
+          <a href="#">MIT</a>
+        </div>
+      </div>
+    </div>
+  </aside>
 
   <main class="main">
-    <section class="section section--studio" id="studio" aria-labelledby="studio-title">
-      <div class="section__inner">
-        <h1 class="hero-title" id="studio-title">kʷátɬp</h1>
-        <p class="line-pronunciation">kʷát-lp  ·  cedar  ·  nɬeʔkepmxcín</p>
-        <p class="line-attribution">
-          FirstVoices, Nlaka'pamux language archive · Speaker: May Moses<br />
-          <a href="https://firstvoices.com/nlekepmxcin" target="_blank" rel="noopener noreferrer">firstvoices.com/nlekepmxcin</a>
+
+    <section class="panel flush hero" id="tmixw" data-screen-label="hero">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-content">
+        <span class="kicker">kʷátɬp · solo AI narrative engine</span>
+        <h1 class="h-display">tmíxʷ</h1>
+        <p class="tagline">Your story. Your hardware. Your rules.</p>
+        <p class="lede">
+          A novel-shaped interface for the kind of story that only happens once.
+          Voice in, narrative out — fully on-device. No cloud, no account, no censor.
         </p>
-
-        <div class="prose">
-          <p>kʷátɬp is cedar. In nɬeʔkepmxcín, the language of the Nlaka'pamux people of British Columbia, the cedar is not decorated with meaning — it simply is what it does. It shelters. It persists. It gives without exhausting itself.</p>
-          <p>We build under that name.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#get-it">Watch the demo</a>
+          <a class="btn ghost" href="https://github.com/kwatlp/tmixw">View on GitHub →</a>
         </div>
-
-        <h2 class="section-heading">The People</h2>
-        <div class="team-grid">
-          <article class="card">
-            <h3 class="card__name">Brennen Kennedy</h3>
-            <p class="card__role">Game Designer &amp; Developer</p>
-            <p class="card__links">
-              <a href="https://linktr.ee/brennen.kennedy.games" target="_blank" rel="noopener noreferrer">Linktree</a>
-            </p>
-          </article>
-          <article class="card">
-            <h3 class="card__name">Mike Yamauchi</h3>
-            <p class="card__role">Developer</p>
-            <p class="card__links">
-              <a href="https://github.com/mike-yama-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <span class="card__link-sep" aria-hidden="true">·</span>
-              <a href="https://www.linkedin.com/in/mikeyamauchi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p>
-          </article>
+        <div class="hero-tags">
+          <span class="chip gold"><span class="dot"></span>Fully local</span>
+          <span class="chip">Voice-first</span>
+          <span class="chip">Persistent world</span>
+          <span class="chip">MIT</span>
         </div>
       </div>
     </section>
 
-    <div class="section-divider" role="presentation"></div>
+    <section class="panel" id="mechanism" data-screen-label="mechanism">
+      <header class="section-head">
+        <div class="titles">
+          <span class="kicker">Mechanism</span>
+          <h2 class="h-section">Voice in. Narrative out.</h2>
+        </div>
+        <div class="meta">
+          <span class="chip gold"><span class="dot"></span>On device</span>
+        </div>
+      </header>
 
-    <section class="section section--product" id="tmixw" aria-labelledby="product-title">
-      <div class="section__inner">
-        <h2 class="product-title" id="product-title">tmíxʷ</h2>
-        <p class="line-pronunciation">t-míxʷ  ·  ground, earth, land  ·  nɬeʔkepmxcín</p>
-        <p class="line-attribution">
-          FirstVoices, Nlaka'pamux language archive · Speaker: Art Sam<br />
-          <a href="https://firstvoices.com/nlekepmxcin" target="_blank" rel="noopener noreferrer">firstvoices.com/nlekepmxcin</a>
-        </p>
+      <p class="body bone" style="max-width: 720px; margin-bottom: 20px;">
+        Hold the backtick key and speak. The mic captures, the model reasons,
+        the page writes back. Every step lives on the same machine you're sitting at.
+      </p>
 
-        <p class="product-subtitle">Solo AI Narrative Engine</p>
+      <div class="pipeline">
+        <div class="pipe-step">
+          <span class="num">i.</span>
+          <span class="name">Voice</span>
+          <span class="runtime">push-to-talk · ` key</span>
+          <span class="desc">A two-second clip — or thirty — captured from the mic of your choosing.</span>
+        </div>
+        <span class="pipe-arrow" aria-hidden="true">→</span>
+        <div class="pipe-step">
+          <span class="num">ii.</span>
+          <span class="name">Transcribe</span>
+          <span class="runtime">whisper.cpp</span>
+          <span class="desc">Speech becomes text without ever leaving the box. Pick model size to taste.</span>
+        </div>
+        <span class="pipe-arrow" aria-hidden="true">→</span>
+        <div class="pipe-step">
+          <span class="num">iii.</span>
+          <span class="name">Reason</span>
+          <span class="runtime">KoboldCPP</span>
+          <span class="desc">Your model reads the world state — characters, quests, lore, NPCs — and answers.</span>
+        </div>
+        <span class="pipe-arrow" aria-hidden="true">→</span>
+        <div class="pipe-step">
+          <span class="num">iv.</span>
+          <span class="name">Narrate</span>
+          <span class="runtime">novel UI</span>
+          <span class="desc">The page reads like a chapter. The world remembers what changed.</span>
+        </div>
+      </div>
 
-        <div class="prose">
-          <p>tmíxʷ is ground, earth, land. We named our solo AI narrative engine after it because a story needs ground to stand on — a world that holds what happened, that remembers the people you met and the choices you made.</p>
-          <p>Run your story on your own hardware. No cloud. No account. No censorship. Voice-first input, a world that persists between sessions, and an interface that looks like a novel — not a chatbox.</p>
+      <p class="guarantee">
+        No telemetry. No accounts. No remote inference. The whole pipeline is yours to read, fork, or unplug.
+      </p>
+    </section>
+
+    <section class="panel" id="origin" data-screen-label="origin">
+      <header class="section-head">
+        <div class="titles">
+          <span class="kicker">Origin · nɬeʔkepmxcín</span>
+          <h2 class="h-section">tmíxʷ — the ground a story stands on.</h2>
+        </div>
+      </header>
+
+      <div class="two-col weighted">
+        <div>
+          <p class="body serif dropcap">
+            <strong style="color:var(--gold); font-weight:600;">Tmíxʷ</strong> is a foundational
+            concept in the Nlaka'pamux language and worldview, referring broadly to the land,
+            the earth, and all living things within it. It encompasses the collective history,
+            resources, and spiritual connection the Nlaka'pamux people have to their traditional
+            territories.
+          </p>
+          <p class="body" style="margin-top: 14px; max-width: 56ch;">
+            We chose the word because a story needs ground to stand on — a world that holds what
+            happened, a place that remembers the people you met and the choices you made.
+            We use the term with care. It is acknowledged language, not decoration.
+          </p>
+          <div class="attribution-strip">
+            From the <a href="https://firstvoices.com/nlekepmxcin">FirstVoices archive of nɬeʔkepmxcín</a>,
+            the language of the Nlaka'pamux people of British Columbia.
+            Speakers credited per item; please visit the archive to hear the words spoken.
+          </div>
         </div>
 
-        <ul class="feature-pills" role="list">
-          <li class="feature-pill"><span class="feature-pill__icon" aria-hidden="true">🎙</span> <strong>Voice-first</strong> — speak your turn, the world responds</li>
-          <li class="feature-pill"><span class="feature-pill__icon" aria-hidden="true">📖</span> <strong>Novel UI</strong> — panels, portraits, living world state</li>
-          <li class="feature-pill"><span class="feature-pill__icon" aria-hidden="true">🔒</span> <strong>Fully local</strong> — your hardware, your data, your rules</li>
-        </ul>
-
-        <div class="waitlist">
-          <h2 class="waitlist__heading">Get notified when tmíxʷ ships</h2>
-          <!-- WAITLIST PROVIDER: Buttondown embed below. To swap to Mailchimp, replace this block. -->
-          <form
-            class="waitlist-form"
-            action="https://buttondown.com/api/emails/embed-subscribe/kwatlp"
-            method="post"
-          >
-            <label class="sr-only" for="bd-email">Email</label>
-            <input
-              class="waitlist-form__input"
-              type="email"
-              name="email"
-              id="bd-email"
-              placeholder="you@example.com"
-              required
-              autocomplete="email"
-            />
-            <input type="hidden" name="embed" value="1" />
-            <button class="waitlist-form__submit" type="submit">Notify me</button>
-          </form>
+        <div>
+          <div class="lang-card">
+            <div class="head">
+              <span class="word">tmíxʷ</span>
+              <span class="pron">t-míxʷ</span>
+            </div>
+            <span class="meaning">ground · earth · land</span>
+            <div class="attr">
+              <span>Speaker</span>
+              <span class="speaker">Art Sam</span>
+            </div>
+          </div>
+          <div class="lang-card">
+            <div class="head">
+              <span class="word">kʷátɬp</span>
+              <span class="pron">kwát-lp</span>
+            </div>
+            <span class="meaning">cedar</span>
+            <div class="attr">
+              <span>Speaker</span>
+              <span class="speaker">May Moses</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="panel" id="studio" data-screen-label="studio">
+      <header class="section-head">
+        <div class="titles">
+          <span class="kicker">The studio</span>
+          <h2 class="h-section">kʷátɬp — cedar.</h2>
+        </div>
+        <div class="meta">
+          <span class="chip">est. 2026</span>
+        </div>
+      </header>
+
+      <p class="studio-pull">
+        Cedar is the container. We build off its strength — strong, reliable,
+        expansive, beautiful — and we put each project under it as a separate room.
+      </p>
+
+      <div class="cedar-traits">
+        <div class="trait">
+          <span class="roman">i.</span>
+          <span class="name">Strong</span>
+          <span class="desc">Long-grained. Doesn't crack under weather. Holds the roof up.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">ii.</span>
+          <span class="name">Reliable</span>
+          <span class="desc">Predictable. Each plank behaves like the last one. You can plan a house from it.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">iii.</span>
+          <span class="name">Expansive</span>
+          <span class="desc">Grows tall and wide. One trunk can shelter many things at once.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">iv.</span>
+          <span class="name">Beautiful</span>
+          <span class="desc">Quiet figure, warm tone. Doesn't have to shout to be looked at.</span>
+        </div>
+      </div>
+
+      <p class="body" style="margin-top: 18px; max-width: 64ch;">
+        tmíxʷ is the first room under that roof. Other projects will follow as they're
+        ready — each one its own thing, each one held by the same wood.
+      </p>
+    </section>
+
+    <section class="panel notify" id="get-it" data-screen-label="get-it">
+      <div>
+        <span class="kicker">Get notified</span>
+        <h3 class="h-section" style="font-size: 1.35rem; margin-top: 6px;">Be told when tmíxʷ ships.</h3>
+        <p class="body" style="margin-top: 8px; max-width: 56ch;">
+          We're heads-down on the 0.3 release. Leave an email and we'll write to you once,
+          when there's something installable. No newsletter, no follow-ups.
+        </p>
+      </div>
+      <form
+        class="notify-form"
+        action="https://buttondown.com/api/emails/embed-subscribe/kwatlp"
+        method="post"
+      >
+        <label class="sr-only" for="bd-email">Email</label>
+        <input type="email" name="email" id="bd-email" required placeholder="you@example.com" autocomplete="email" />
+        <input type="hidden" name="embed" value="1" />
+        <button class="btn primary" type="submit">Notify me</button>
+      </form>
+    </section>
+
+    <footer class="panel foot" data-screen-label="footer">
+      <span>© 2026 kʷátɬp · MIT licensed</span>
+      <div class="foot-links">
+        <a href="https://github.com/kwatlp/tmixw">GitHub</a>
+        <a href="https://kwatlp.itch.io/">itch.io</a>
+        <a href="https://firstvoices.com/nlekepmxcin">FirstVoices · nɬeʔkepmxcín</a>
+      </div>
+    </footer>
+
   </main>
+</div>
 
-  <footer class="footer">
-    <nav class="footer__nav" aria-label="Footer">
-      <a href="https://linktr.ee/brennen.kennedy.games" target="_blank" rel="noopener noreferrer">Brennen's Linktree</a>
-      <span class="footer__sep" aria-hidden="true">·</span>
-      <a href="https://github.com/mike-yama-dev" target="_blank" rel="noopener noreferrer">Mike's GitHub</a>
-      <span class="footer__sep" aria-hidden="true">·</span>
-      <a href="https://www.linkedin.com/in/mikeyamauchi" target="_blank" rel="noopener noreferrer">Mike's LinkedIn</a>
-      <span class="footer__sep" aria-hidden="true">·</span>
-      <a href="https://kwatlp.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
-      <span class="footer__sep" aria-hidden="true">·</span>
-      <a href="https://github.com/kwatlp/tmixw" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </nav>
-    <p class="footer__copy">© 2026 kʷátɬp · MIT Licensed</p>
-  </footer>
+<script>
+  (function () {
+    const spy = document.querySelectorAll('.scrollspy .sb-item');
+    const sections = [...spy].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    if (!sections.length) return;
+    const setActive = (idx) => {
+      spy.forEach((el, i) => el.classList.toggle('active', i === idx));
+    };
+    const onScroll = () => {
+      const y = window.scrollY + 140;
+      let idx = 0;
+      sections.forEach((s, i) => { if (s.offsetTop <= y) idx = i; });
+      setActive(idx);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+
 </body>
 </html>
