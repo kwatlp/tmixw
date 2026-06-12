@@ -82,6 +82,7 @@
       <nav class="sb-group scrollspy" aria-label="On this page">
         <div class="sb-group-label"><span>tmíxʷ · sections</span></div>
         <a class="sb-item" href="#mechanism"><span class="dot"></span><span>Mechanism</span><span class="progress"></span></a>
+        <a class="sb-item" href="#progress"><span class="dot"></span><span>Progress</span><span class="progress"></span></a>
         <a class="sb-item" href="#origin"><span class="dot"></span><span>Origin</span><span class="progress"></span></a>
         <a class="sb-item" href="#studio"><span class="dot"></span><span>The studio</span><span class="progress"></span></a>
         <a class="sb-item" href="#get-it"><span class="dot"></span><span>Get it</span><span class="progress"></span></a>
@@ -96,7 +97,7 @@
       <div class="sb-footer">
         <div class="sb-status">
           <span class="pulse"></span>
-          <span>Pre-release · 0.2.0 · Windows</span>
+          <span>Pre-release · 0.8.0 · Windows</span>
         </div>
         <div class="row">
           <span>© 2026 kʷátɬp</span>
@@ -116,7 +117,7 @@
         <p class="tagline">Your story. Your hardware. Your rules.</p>
         <p class="lede">
           A novel-shaped interface for the kind of story that only happens once.
-          Voice in, narrative out — fully on-device. No cloud, no account, no censor.
+          Voice in, streaming narrative out — fully on-device. No cloud, no account, no censor.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="#get-it">Watch the demo</a>
@@ -126,6 +127,7 @@
           <span class="chip gold"><span class="dot"></span>Fully local</span>
           <span class="chip">Voice-first</span>
           <span class="chip">Persistent world</span>
+          <span class="chip">Any local backend</span>
           <span class="chip">MIT</span>
         </div>
       </div>
@@ -143,8 +145,10 @@
       </header>
 
       <p class="body bone" style="max-width: 720px; margin-bottom: 20px;">
-        Hold the backtick key and speak. The mic captures, the model reasons,
-        the page writes back. Every step lives on the same machine you're sitting at.
+        Hold the backtick key and speak. The mic captures, the narrator answers in
+        streamed prose, and a second model quietly keeps the world's records —
+        characters, quests, lore, memory. Every step lives on the same machine
+        you're sitting at.
       </p>
 
       <div class="pipeline">
@@ -165,20 +169,77 @@
         <div class="pipe-step">
           <span class="num">iii.</span>
           <span class="name">Reason</span>
-          <span class="runtime">KoboldCPP</span>
-          <span class="desc">Your model reads the world state — characters, quests, lore, NPCs — and answers.</span>
+          <span class="runtime">KoboldCPP · llama.cpp · Ollama</span>
+          <span class="desc">Your model reads the world state — characters, quests, lore, memory — and answers. Bring whichever backend you already run.</span>
         </div>
         <span class="pipe-arrow" aria-hidden="true">→</span>
         <div class="pipe-step">
           <span class="num">iv.</span>
           <span class="name">Narrate</span>
-          <span class="runtime">novel UI</span>
-          <span class="desc">The page reads like a chapter. The world remembers what changed.</span>
+          <span class="runtime">novel UI · streaming</span>
+          <span class="desc">Prose streams onto the page like a chapter being written. The world remembers what changed.</span>
         </div>
       </div>
 
       <p class="guarantee">
         No telemetry. No accounts. No remote inference. The whole pipeline is yours to read, fork, or unplug.
+      </p>
+    </section>
+
+    <section class="panel" id="progress" data-screen-label="progress">
+      <header class="section-head">
+        <div class="titles">
+          <span class="kicker">Progress · 0.3 → 0.8</span>
+          <h2 class="h-section">Five releases since the last word.</h2>
+        </div>
+        <div class="meta">
+          <span class="chip gold"><span class="dot"></span>0.8.0 · in testing</span>
+        </div>
+      </header>
+
+      <p class="body bone" style="max-width: 720px; margin-bottom: 20px;">
+        The engine is feature-complete for the beta. What follows is what landed
+        between 0.3.0 and 0.8.0 — all of it now in a shakedown campaign before
+        anything ships.
+      </p>
+
+      <div class="cedar-traits three">
+        <div class="trait">
+          <span class="roman">i.</span>
+          <span class="name">Whole-story memory</span>
+          <span class="desc">Story beats roll up into scenes and chapters; pinned entries and vector recall keep hundred-turn campaigns in the narrator's head. Every line of it is yours to browse and edit.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">ii.</span>
+          <span class="name">Streaming narration</span>
+          <span class="desc">Prose arrives token by token — about a second to the first word on a 7B. Stop mid-sentence and keep the partial.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">iii.</span>
+          <span class="name">The editorial chair</span>
+          <span class="desc">Redo, Continue, Rewrite-with-instruction, Keep. Nothing enters the world until you accept it — regenerating never pollutes the record.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">iv.</span>
+          <span class="name">Style &amp; voice</span>
+          <span class="desc">Tone, point of view, tense, rating, length — set once, honored every turn. Model-aware prompt templates, auto-detected.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">v.</span>
+          <span class="name">Lore without interruptions</span>
+          <span class="desc">New lore files itself; only genuine conflicts wait — in a quiet drawer, never a modal. Play never stops.</span>
+        </div>
+        <div class="trait">
+          <span class="roman">vi.</span>
+          <span class="name">Backend freedom</span>
+          <span class="desc">KoboldCPP, llama.cpp, Ollama, or any OpenAI-compatible server. Switch in Settings — no restart, no lock-in.</span>
+        </div>
+      </div>
+
+      <p class="body" style="margin-top: 18px; max-width: 64ch;">
+        Also along the way: per-location background art with crossfade, optional
+        local image generation, and per-turn latency budgets measured and held —
+        first word in under two seconds on a 7B-class model.
       </p>
     </section>
 
@@ -286,26 +347,26 @@
     <section class="panel notify" id="get-it" data-screen-label="get-it">
       <div>
         <span class="kicker">Get notified</span>
-        <h3 class="h-section" style="font-size: 1.35rem; margin-top: 6px;">Be told when tmíxʷ ships.</h3>
-        <p class="body" style="margin-top: 8px; max-width: 56ch;">
-          We're heads-down on the 0.3 release. Leave an email and we'll write to you once,
+        <h3 class="h-section notify-title">Be told when tmíxʷ ships.</h3>
+        <p class="body bone" style="margin-top: 10px; max-width: 56ch; font-size: 0.95rem;">
+          0.8.0 is built and in its test campaign. The first downloadable build
+          arrives with the 0.9.0 beta. Leave an email and we'll write to you once,
           when there's something installable. No newsletter, no follow-ups.
         </p>
       </div>
-      <div>
-        <h2 class="h-section">Subscribe to our Newsletter</h2>
-        <p class="body" style="margin-top: 8px; max-width: 56ch;">Get the latest updates delivered straight to your inbox — no noise, just the things worth knowing.</p>
+      <div class="notify-side">
+        <form
+          class="notify-form"
+          action="https://buttondown.com/api/emails/embed-subscribe/kwatlpstudio"
+          method="post"
+        >
+          <label class="sr-only" for="bd-email">Email</label>
+          <input type="email" name="email" id="bd-email" required placeholder="you@example.com" autocomplete="email" />
+          <input type="hidden" name="embed" value="1" />
+          <button class="btn primary" type="submit">Notify me</button>
+        </form>
+        <span class="notify-note">One email. That's the whole list.</span>
       </div>
-      <form
-        class="notify-form"
-        action="https://buttondown.com/api/emails/embed-subscribe/kwatlpstudio"
-        method="post"
-      >
-        <label class="sr-only" for="bd-email">Email</label>
-        <input type="email" name="email" id="bd-email" required placeholder="you@example.com" autocomplete="email" />
-        <input type="hidden" name="embed" value="1" />
-        <button class="btn primary" type="submit">Notify me</button>
-      </form>
     </section>
 
     <footer class="panel foot" data-screen-label="footer">
